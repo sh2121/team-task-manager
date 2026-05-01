@@ -1,0 +1,205 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* Container */
+.container {
+  padding: 30px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Card Layout */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Card Base */
+.card {
+  padding: 25px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+/* Card Colors */
+.total {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+.completed {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.progress {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.todo {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.overdue {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* Numbers */
+.card p {
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Auth UI */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-box {
+  background: #1e293b;
+  padding: 40px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-box button:hover {
+  background: #4f46e5;
+}
+
+/* Task Form */
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.task-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  flex: 1;
+}
+
+.task-form button {
+  padding: 10px 20px;
+  background: #6366f1;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Task Grid */
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Task Card */
+.task-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Status Badges */
+.status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* Colors */
+.status.Todo {
+  background: #f59e0b;
+}
+
+.status.InProgress {
+  background: #3b82f6;
+}
+
+.status.Done {
+  background: #10b981;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #1e293b;
+}
+
+.navbar a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #6366f1;
+}
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+.navbar button {
+  margin-left: 20px;
+  padding: 6px 12px;
+  background: #ef4444;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
